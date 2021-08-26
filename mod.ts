@@ -16,11 +16,11 @@ serve({
 });
 
 
-const APPID = "" || Deno.env.get("APP_ID")
+const APPID = Deno.env.get("APP_ID")
 if (!APPID) {
   throw Error("There is no APP_ID env variable")
 }
-const APPTOKEN = "" || Deno.env.get("APP_TOKEN")
+const APPTOKEN = Deno.env.get("APP_TOKEN")
 if (!APPTOKEN) {
   throw Error("There is no APP_TOKEN env variable")
 }
